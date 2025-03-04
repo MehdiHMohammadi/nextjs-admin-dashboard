@@ -52,12 +52,12 @@ export default function SignIn() {
               گزینه های زیر
               </p>
 
-              <div className="mt-31">
+              <div className="mt-31 w-auto h-auto">
                 <Image
                   src={"/images/grids/grid-02.svg"}
                   alt="Logo"
                   width={405}
-                  height={325}
+                  height={323}
                   className="mx-auto dark:opacity-30"
                 />
               </div>

@@ -49,10 +49,10 @@ export default function Page() {
             className="h-full w-full rounded-tl-[10px] rounded-tr-[10px] object-cover object-center"
             width={970}
             height={260}
-            style={{
-              width: "auto",
-              height: "auto",
-            }}
+            // style={{
+            //   width: "auto",
+            //   height: "auto",
+            // }}
           />
           <div className="absolute bottom-1 right-1 z-10 xsm:bottom-4 xsm:right-4">
             <label

@@ -18,8 +18,8 @@ export function PersonalInfoForm() {
             type="text"
             name="نام و نام خانوادگی"
             label="نام و نام خانوادگی"
-            placeholder="David Jhon"
-            defaultValue="David Jhon"
+            placeholder="سینا کوشا"
+            defaultValue="سینا کوشا"
             icon={<UserIcon />}
             iconPosition="left"
             height="sm"
@@ -30,8 +30,8 @@ export function PersonalInfoForm() {
             type="text"
             name="شماره تماس  "
             label="شماره تماس"
-            placeholder="+990 3343 7865"
-            defaultValue={"+990 3343 7865"}
+            placeholder="+971 52 912 4075"
+            defaultValue={"+971 52 912 4075"}
             icon={<CallIcon />}
             iconPosition="left"
             height="sm"
@@ -55,8 +55,8 @@ export function PersonalInfoForm() {
           type="text"
           name="نام کاربری"
           label="نام کاربری"
-          placeholder="devidjhon24"
-          defaultValue="devidjhon24"
+          placeholder="Sina_Koosha"
+          defaultValue="Sina_Koosha"
           icon={<UserIcon />}
           iconPosition="left"
           height="sm"
