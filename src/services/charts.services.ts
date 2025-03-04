@@ -1,5 +1,5 @@
 export async function getDevicesUsedData(
-  timeFrame?: "monthly" | "yearly" | (string & {}),
+  timeFrame?: "دوشنبهthly" | "yearly" | (string & {}),
 ) {
   // Fake delay
   await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -38,7 +38,7 @@ export async function getDevicesUsedData(
 }
 
 export async function getPaymentsOverviewData(
-  timeFrame?: "monthly" | "yearly" | (string & {}),
+  timeFrame?: "دوشنبهthly" | "yearly" | (string & {}),
 ) {
   // Fake delay
   await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -101,44 +101,44 @@ export async function getWeeksProfitData(timeFrame?: string) {
   if (timeFrame === "last week") {
     return {
       sales: [
-        { x: "Sat", y: 33 },
-        { x: "Sun", y: 44 },
-        { x: "Mon", y: 31 },
-        { x: "Tue", y: 57 },
-        { x: "Wed", y: 12 },
-        { x: "Thu", y: 33 },
-        { x: "Fri", y: 55 },
+        { x: "شنبه", y: 33 },
+        { x: "یکشنبه", y: 44 },
+        { x: "دوشنبه", y: 31 },
+        { x: "سه شنبه", y: 57 },
+        { x: "چهارشنبه", y: 12 },
+        { x: "پنج شنبه", y: 33 },
+        { x: "جمعه", y: 55 },
       ],
       revenue: [
-        { x: "Sat", y: 10 },
-        { x: "Sun", y: 20 },
-        { x: "Mon", y: 17 },
-        { x: "Tue", y: 7 },
-        { x: "Wed", y: 10 },
-        { x: "Thu", y: 23 },
-        { x: "Fri", y: 13 },
+        { x: "شنبه", y: 10 },
+        { x: "یکشنبه", y: 20 },
+        { x: "دوشنبه", y: 17 },
+        { x: "سه شنبه", y: 7 },
+        { x: "چهارشنبه", y: 10 },
+        { x: "پنج شنبه", y: 23 },
+        { x: "جمعه", y: 13 },
       ],
     };
   }
 
   return {
     sales: [
-      { x: "Sat", y: 44 },
-      { x: "Sun", y: 55 },
-      { x: "Mon", y: 41 },
-      { x: "Tue", y: 67 },
-      { x: "Wed", y: 22 },
-      { x: "Thu", y: 43 },
-      { x: "Fri", y: 65 },
+      { x: "شنبه", y: 44 },
+      { x: "یکشنبه", y: 55 },
+      { x: "دوشنبه", y: 41 },
+      { x: "سه شنبه", y: 67 },
+      { x: "چهارشنبه", y: 22 },
+      { x: "پنج شنبه", y: 43 },
+      { x: "جمعه", y: 65 },
     ],
     revenue: [
-      { x: "Sat", y: 13 },
-      { x: "Sun", y: 23 },
-      { x: "Mon", y: 20 },
-      { x: "Tue", y: 8 },
-      { x: "Wed", y: 13 },
-      { x: "Thu", y: 27 },
-      { x: "Fri", y: 15 },
+      { x: "شنبه", y: 13 },
+      { x: "یکشنبه", y: 23 },
+      { x: "دوشنبه", y: 20 },
+      { x: "سه شنبه", y: 8 },
+      { x: "چهارشنبه", y: 13 },
+      { x: "پنج شنبه", y: 27 },
+      { x: "جمعه", y: 15 },
     ],
   };
 }
@@ -180,35 +180,35 @@ export async function getCostsPerInteractionData() {
       {
         name: "Google Ads",
         data: [
-          { x: "Sep", y: 15 },
-          { x: "Oct", y: 12 },
-          { x: "Nov", y: 61 },
-          { x: "Dec", y: 118 },
-          { x: "Jan", y: 78 },
-          { x: "Feb", y: 125 },
-          { x: "Mar", y: 165 },
-          { x: "Apr", y: 61 },
-          { x: "May", y: 183 },
-          { x: "Jun", y: 238 },
-          { x: "Jul", y: 237 },
-          { x: "Aug", y: 235 },
+          { x: "شهریور", y: 15 },
+          { x: "مهر", y: 12 },
+          { x: "آبان", y: 61 },
+          { x: "آذر", y: 118 },
+          { x: "دی", y: 78 },
+          { x: "بهمن", y: 125 },
+          { x: "اسفند", y: 165 },
+          { x: "فروردین", y: 61 },
+          { x: "اردیبهشت", y: 183 },
+          { x: "خرداد", y: 238 },
+          { x: "تیر", y: 237 },
+          { x: "مرداد", y: 235 },
         ],
       },
       {
         name: "Facebook Ads",
         data: [
-          { x: "Sep", y: 75 },
-          { x: "Oct", y: 77 },
-          { x: "Nov", y: 151 },
-          { x: "Dec", y: 72 },
-          { x: "Jan", y: 7 },
-          { x: "Feb", y: 58 },
-          { x: "Mar", y: 60 },
-          { x: "Apr", y: 185 },
-          { x: "May", y: 239 },
-          { x: "Jun", y: 135 },
-          { x: "Jul", y: 119 },
-          { x: "Aug", y: 124 },
+          { x: "شهریور", y: 75 },
+          { x: "مهر", y: 77 },
+          { x: "آبان", y: 151 },
+          { x: "آذر", y: 72 },
+          { x: "دی", y: 7 },
+          { x: "بهمن", y: 58 },
+          { x: "اسفند", y: 60 },
+          { x: "فروردین", y: 185 },
+          { x: "اردیبهشت", y: 239 },
+          { x: "خرداد", y: 135 },
+          { x: "تیر", y: 119 },
+          { x: "مرداد", y: 124 },
         ],
       },
     ],

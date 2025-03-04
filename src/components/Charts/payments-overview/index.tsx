@@ -37,14 +37,14 @@ export async function PaymentsOverview({
           <dt className="text-xl font-bold text-dark dark:text-white">
             ${standardFormat(data.received.reduce((acc, { y }) => acc + y, 0))}
           </dt>
-          <dd className="font-medium dark:text-dark-6">Received Amount</dd>
+          <dd className="font-medium dark:text-dark-6">درخواست های رسیده</dd>
         </div>
 
         <div>
           <dt className="text-xl font-bold text-dark dark:text-white">
             ${standardFormat(data.due.reduce((acc, { y }) => acc + y, 0))}
           </dt>
-          <dd className="font-medium dark:text-dark-6">Due Amount</dd>
+          <dd className="font-medium dark:text-dark-6">منجر به قرارداد</dd>
         </div>
       </dl>
     </div>
