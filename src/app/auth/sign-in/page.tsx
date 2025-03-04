@@ -33,7 +33,7 @@ export default function SignIn() {
                 />
                 <Image
                   className="dark:hidden"
-                  src={"/images/logo/logo.webp"}
+                  src={"/images/logo/main.webp"}
                   alt="Logo"
                   width={176}
                   height={32}

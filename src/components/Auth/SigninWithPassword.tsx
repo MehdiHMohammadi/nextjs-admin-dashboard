@@ -5,8 +5,11 @@ import React, { useState } from "react";
 import axios from 'axios';
 import InputGroup from "../FormElements/InputGroup";
 import { Checkbox } from "../FormElements/checkbox";
+// import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function SigninWithPassword() {
+  const router = useRouter();
   const [data, setData] = useState({
     email: process.env.NEXT_PUBLIC_DEMO_USER_MAIL || "",
     password: process.env.NEXT_PUBLIC_DEMO_USER_PASS || "",
@@ -57,13 +60,13 @@ export default function SigninWithPassword() {
   };
     // Function to verify OTP
     const verifyOtp = () => {
-
+      router.push("/");
       // if OTP entered by the user is same as the OTP generated, give a alert message to the user.
-      if (otp == userOtp) {
-        alert("OTP Verified");
-      } else {
-        alert("OTP Not Verified");
-      }
+      // if (otp == userOtp) {
+      //   alert("OTP Verified");
+      // } else {
+      //   alert("OTP Not Verified");
+      // }
     };
   
 
