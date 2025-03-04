@@ -79,7 +79,7 @@ export async function getTopHistories() {
   return [
     {
       name: "مشکل حقوقی اول",
-      visitors: '1403/11/20',
+      visitors: ' 1403/11/20',
       revenues: logos.Conclusion,
       status: 'Done',
       labael_status: 'انجام شده',
