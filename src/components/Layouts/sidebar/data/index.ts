@@ -13,8 +13,8 @@ export const NAV_DATA = [
       },
       {
         title: "وکیل هوشمند",
-        // url: "/smart-lawyer",
-        url: "https://smart-legal-assistant.vercel.app",
+        url: "/smart-lawyer",
+        // url: "https://smart-legal-assistant.vercel.app",
         icon: Icons.Chats,
         items: [],
       },
@@ -67,84 +67,84 @@ export const NAV_DATA = [
         icon: Icons.Calendar,
         items: [],
       },
-      {
-        title: "پروفایل",
-        url: "/profile",
-        icon: Icons.User,
-        items: [],
-      },
-      {
-        title: "فرم ها",
-        icon: Icons.Alphabet,
-        items: [
-          {
-            title: "المان های فرم",
-            url: "/forms/form-elements",
-          },
-          {
-            title: "فرم وکیل",
-            url: "/forms/form-law",
-          },
-                    {
-            title: "فرم وکیل متخصص",
-            url: "/forms/form-law1",
-          },
-          {
-            title: "ساختار فرم",
-            url: "/forms/form-layout",
-          },
-        ],
-      },
-      {
-        title: "جداول",
-        url: "/tables",
-        icon: Icons.Table,
-        items: [
-          {
-            title: "جدول ها",
-            url: "/tables",
-          },
-        ],
-      },
-      {
-        title: "صفحه ها",
-        icon: Icons.Alphabet,
-        items: [
-          {
-            title: "تنظیمات ",
-            url: "/pages/settings",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    label: "اضافات",
-    items: [
-      {
-        title: "نمودارها",
-        icon: Icons.PieChart,
-        items: [
-          {
-            title: "نمودار ساده",
-            url: "/charts/basic-chart",
-          },
-        ],
-      },
-      {
-        title: "المان ها",
-        icon: Icons.FourCircle,
-        items: [
-          {
-            title: "هشدارها",
-            url: "/ui-elements/alerts",
-          },
-          {
-            title: "دکمه ها",
-            url: "/ui-elements/buttons",
-          },
-        ],
-      },
+  //     {
+  //       title: "پروفایل",
+  //       url: "/profile",
+  //       icon: Icons.User,
+  //       items: [],
+  //     },
+  //     {
+  //       title: "فرم ها",
+  //       icon: Icons.Alphabet,
+  //       items: [
+  //         {
+  //           title: "المان های فرم",
+  //           url: "/forms/form-elements",
+  //         },
+  //         {
+  //           title: "فرم وکیل",
+  //           url: "/forms/form-law",
+  //         },
+  //                   {
+  //           title: "فرم وکیل متخصص",
+  //           url: "/forms/form-law1",
+  //         },
+  //         {
+  //           title: "ساختار فرم",
+  //           url: "/forms/form-layout",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "جداول",
+  //       url: "/tables",
+  //       icon: Icons.Table,
+  //       items: [
+  //         {
+  //           title: "جدول ها",
+  //           url: "/tables",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "صفحه ها",
+  //       icon: Icons.Alphabet,
+  //       items: [
+  //         {
+  //           title: "تنظیمات ",
+  //           url: "/pages/settings",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   label: "اضافات",
+  //   items: [
+  //     {
+  //       title: "نمودارها",
+  //       icon: Icons.PieChart,
+  //       items: [
+  //         {
+  //           title: "نمودار ساده",
+  //           url: "/charts/basic-chart",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "المان ها",
+  //       icon: Icons.FourCircle,
+  //       items: [
+  //         {
+  //           title: "هشدارها",
+  //           url: "/ui-elements/alerts",
+  //         },
+  //         {
+  //           title: "دکمه ها",
+  //           url: "/ui-elements/buttons",
+  //         },
+  //       ],
+  //     },
       {
         title: "احراز هویت",
         icon: Icons.Authentication,
