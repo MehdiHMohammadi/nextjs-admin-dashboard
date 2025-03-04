@@ -1,62 +1,117 @@
 import * as Icons from "../icons";
 
+
 export const NAV_DATA = [
   {
-    label: "MAIN MENU",
+    label: "منوی اصلی",
     items: [
       {
-        title: "Dashboard",
-        icon: Icons.HomeIcon,
-        items: [
-          {
-            title: "eCommerce",
-            url: "/",
-          },
-        ],
+        title: "داشبورد",
+        url: "/",
+        icon: Icons.Dashboard,
+        items: [],
       },
       {
-        title: "Calendar",
+        title: "وکیل هوشمند",
+        // url: "/smart-lawyer",
+        url: "https://smart-legal-assistant.vercel.app",
+        icon: Icons.Chats,
+        items: [],
+      },
+      {
+        title: "تاریخچه",
+        url: "/history",
+        icon: Icons.History,
+        items: [],
+      },
+      {
+        title: "پرونده جریانی",
+        url: "/file-flow",
+        icon: Icons.FolderOpen,
+        items: [],
+      },
+      {
+        title: "مداک ارسالی",
+        url: "/sent-documents",
+        icon: Icons.Send,
+        items: [],
+      },
+      {
+        title: "ترجمه",
+        url: "/translate",
+        icon: Icons.Translate,
+        items: [],
+      },
+      {
+        title: "گفتگو",
+        url: "/chat",
+        icon: Icons.chatIcon,
+        items: [],
+      },
+      {
+        title: "ویرایش اطلاعات",
+        url: "/pages/settings",
+        icon: Icons.User,
+        items: [],
+      },
+      {
+        title: "تماس با ما",
+        url: "/profile",
+        icon: Icons.Conect,
+        items: [],
+      },
+    
+      {
+        title: "تقویم",
         url: "/calendar",
         icon: Icons.Calendar,
         items: [],
       },
       {
-        title: "Profile",
+        title: "پروفایل",
         url: "/profile",
         icon: Icons.User,
         items: [],
       },
       {
-        title: "Forms",
+        title: "فرم ها",
         icon: Icons.Alphabet,
         items: [
           {
-            title: "Form Elements",
+            title: "المان های فرم",
             url: "/forms/form-elements",
           },
           {
-            title: "Form Layout",
+            title: "فرم وکیل",
+            url: "/forms/form-law",
+          },
+                    {
+            title: "فرم وکیل متخصص",
+            url: "/forms/form-law1",
+          },
+          {
+            title: "ساختار فرم",
             url: "/forms/form-layout",
           },
         ],
       },
       {
-        title: "Tables",
+        title: "جداول",
         url: "/tables",
         icon: Icons.Table,
         items: [
           {
-            title: "Tables",
+            title: "جدول ها",
             url: "/tables",
           },
         ],
       },
       {
-        title: "Pages",
+        title: "صفحه ها",
         icon: Icons.Alphabet,
         items: [
           {
-            title: "Settings",
+            title: "تنظیمات ",
             url: "/pages/settings",
           },
         ],
@@ -64,38 +119,38 @@ export const NAV_DATA = [
     ],
   },
   {
-    label: "OTHERS",
+    label: "اضافات",
     items: [
       {
-        title: "Charts",
+        title: "نمودارها",
         icon: Icons.PieChart,
         items: [
           {
-            title: "Basic Chart",
+            title: "نمودار ساده",
             url: "/charts/basic-chart",
           },
         ],
       },
       {
-        title: "UI Elements",
+        title: "المان ها",
         icon: Icons.FourCircle,
         items: [
           {
-            title: "Alerts",
+            title: "هشدارها",
             url: "/ui-elements/alerts",
           },
           {
-            title: "Buttons",
+            title: "دکمه ها",
             url: "/ui-elements/buttons",
           },
         ],
       },
       {
-        title: "Authentication",
+        title: "احراز هویت",
         icon: Icons.Authentication,
         items: [
           {
-            title: "Sign In",
+            title: "ورود",
             url: "/auth/sign-in",
           },
         ],

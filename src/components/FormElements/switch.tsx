@@ -33,7 +33,7 @@ export function Switch({
 
         <div
           className={cn(
-            "absolute left-1 top-1 flex size-6 items-center justify-center rounded-full bg-white shadow-switch-1 transition peer-checked:right-1 peer-checked:translate-x-full peer-checked:[&_.check-icon]:block peer-checked:[&_.x-icon]:hidden",
+            "absolute left-1 top-1 flex size-6 items-center justify-center rounded-full bg-white shadow-switch-1 transition peer-checked:left-1 peer-checked:translate-x-full peer-checked:[&_.check-icon]:block peer-checked:[&_.x-icon]:hidden",
             {
               "-top-1 left-0 size-7 shadow-switch-2": backgroundSize === "sm",
               "peer-checked:bg-primary peer-checked:dark:bg-white":

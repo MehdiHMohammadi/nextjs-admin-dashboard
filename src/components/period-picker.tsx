@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { Dropdown, DropdownContent, DropdownTrigger } from "./ui/dropdown";
+import { v4 as uuidv4 } from 'uuid';
 
 type PropsType<TItem> = {
   defaultValue?: TItem;
@@ -47,7 +48,7 @@ export function PeriodPicker<TItem extends string>({
       >
         <ul>
           {(items || ["monthly", "yearly"]).map((item) => (
-            <li key={crypto.randomUUID()}>
+            <li key={uuidv4()}>
               <button
                 className="flex w-full select-none items-center truncate rounded-md px-3 py-2 text-sm capitalize outline-none hover:bg-[#F9FAFB] hover:text-dark-3 dark:hover:bg-[#FFFFFF1A] dark:hover:text-white"
                 onClick={() => {

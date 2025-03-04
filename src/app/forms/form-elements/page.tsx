@@ -14,32 +14,32 @@ import { Switch } from "@/components/FormElements/switch";
 import { ShowcaseSection } from "@/components/Layouts/showcase-section";
 
 export const metadata: Metadata = {
-  title: "Form Elements",
+  title: "المانهای فرم",
 };
 
 export default function FormElementsPage() {
   return (
     <>
-      <Breadcrumb pageName="Form Elements" />
+      <Breadcrumb pageName="المانهای فرم" />
 
       <div className="grid grid-cols-1 gap-9 sm:grid-cols-2">
         <div className="flex flex-col gap-9">
-          <ShowcaseSection title="Input Fields" className="space-y-5.5 !p-6.5">
+          <ShowcaseSection title="فیلدهای رودی" className="space-y-5.5 !p-6.5">
             <InputGroup
-              label="Default input"
+              label="ورودی پیش فرض"
               placeholder="Default input text"
               type="text"
             />
 
             <InputGroup
-              label="Active input"
+              label="ورودی فعال"
               placeholder="Active input text"
               active
               type="text"
             />
 
             <InputGroup
-              label="Disabled input"
+              label="غیر فعال"
               placeholder="Disabled input text"
               type="text"
               disabled
@@ -47,7 +47,7 @@ export default function FormElementsPage() {
           </ShowcaseSection>
 
           <ShowcaseSection
-            title="Toggle switch input"
+            title="فعال / غیر فعال"
             className="space-y-5.5 !p-6.5"
           >
             <Switch />
@@ -65,15 +65,15 @@ export default function FormElementsPage() {
             <InputGroup
               type="file"
               fileStyleVariant="style1"
-              label="Attach file"
-              placeholder="Attach file"
+              label="فایل ضمیمه"
+              placeholder="فایل ضمیمه"
             />
 
             <InputGroup
               type="file"
               fileStyleVariant="style2"
-              label="Attach file"
-              placeholder="Attach file"
+              label="فایل ضمیمه"
+              placeholder="فایل ضمیمه"
             />
           </ShowcaseSection>
         </div>
@@ -81,30 +81,30 @@ export default function FormElementsPage() {
         <div className="flex flex-col gap-9">
           <ShowcaseSection title="Textarea Fields" className="space-y-6 !p-6.5">
             <TextAreaGroup
-              label="Default textarea"
-              placeholder="Default textarea"
+              label="پیش فرض"
+              placeholder="پیش فرض"
             />
 
             <TextAreaGroup
-              label="Active textarea"
-              placeholder="Active textarea"
+              label="فعال"
+              placeholder="فعال"
               active
             />
 
             <TextAreaGroup
-              label="Disabled textarea"
-              placeholder="Disabled textarea"
+              label="غیر فعال"
+              placeholder="غیر فعال"
               disabled
             />
           </ShowcaseSection>
 
-          <ShowcaseSection title="Select input" className="space-y-5.5 !p-6.5">
+          <ShowcaseSection title="آیتم ای انتخابی" className="space-y-5.5 !p-6.5">
             <Select
-              label="Select Country"
+              label="کشور مورد نظر ..."
               items={[
-                { label: "United States", value: "USA" },
-                { label: "United Kingdom", value: "UK" },
-                { label: "Canada", value: "Canada" },
+                { label: "آمریکا", value: "USA" },
+                { label: "انگلیس", value: "UK" },
+                { label: "کانادا", value: "Canada" },
               ]}
               defaultValue="USA"
               prefixIcon={<GlobeIcon />}
@@ -113,14 +113,14 @@ export default function FormElementsPage() {
           </ShowcaseSection>
 
           <ShowcaseSection
-            title="Checkbox and radio"
+            title="چک باکس و دکمه های رادیویی"
             className="space-y-5.5 !p-6.5"
           >
-            <Checkbox label="Checkbox Text" />
-            <Checkbox label="Checkbox Text" withIcon="check" />
-            <Checkbox label="Checkbox Text" withIcon="x" />
-            <RadioInput label="Checkbox Text" />
-            <RadioInput label="Checkbox Text" variant="circle" />
+            <Checkbox label="چک باکس" />
+            <Checkbox label="چک باکس" withIcon="check" />
+            <Checkbox label="چک باکس" withIcon="x" />
+            <RadioInput label="چک باکس" />
+            <RadioInput label="چک باکس" variant="circle" />
           </ShowcaseSection>
         </div>
       </div>

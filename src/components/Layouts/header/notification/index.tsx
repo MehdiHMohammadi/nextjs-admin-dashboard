@@ -15,28 +15,28 @@ import { BellIcon } from "./icons";
 const notificationList = [
   {
     image: "/images/user/user-15.png",
-    title: "Piter Joined the Team!",
-    subTitle: "Congratulate him",
+    title: "مشکل حقوقی آقای حسینی",
+    subTitle: "ارسال پرونده جدید",
   },
   {
     image: "/images/user/user-03.png",
-    title: "New message",
-    subTitle: "Devid sent a new message",
+    title: "پیام جدید",
+    subTitle: "بررسی پرونده حقوقی خانم رستمی",
   },
   {
     image: "/images/user/user-26.png",
-    title: "New Payment received",
-    subTitle: "Check your earnings",
+    title: "درخواست مشاوره",
+    subTitle: "بررسی مشکل حقوقی",
   },
   {
     image: "/images/user/user-28.png",
-    title: "Jolly completed tasks",
-    subTitle: "Assign new task",
+    title: "منتظر پاسخ",
+    subTitle: "بررسی مشکل حقوقی",
   },
   {
     image: "/images/user/user-27.png",
-    title: "Roman Joined the Team!",
-    subTitle: "Congratulate him",
+    title: "قبول پرونده ",
+    subTitle: " پرونده خانم رضایی",
   },
 ];
 
@@ -56,7 +56,7 @@ export function Notification() {
     >
       <DropdownTrigger
         className="grid size-12 place-items-center rounded-full border bg-gray-2 text-dark outline-none hover:text-primary focus-visible:border-primary focus-visible:text-primary dark:border-dark-4 dark:bg-dark-3 dark:text-white dark:focus-visible:border-primary"
-        aria-label="View Notifications"
+        aria-label="مشاهده اعلان ها"
       >
         <span className="relative">
           <BellIcon />
@@ -64,7 +64,7 @@ export function Notification() {
           {isDotVisible && (
             <span
               className={cn(
-                "absolute right-0 top-0 z-1 size-2 rounded-full bg-red-light ring-2 ring-gray-2 dark:ring-dark-3",
+                "absolute left-0 top-0 z-1 size-2 rounded-full bg-red-light ring-2 ring-gray-2 dark:ring-dark-3",
               )}
             >
               <span className="absolute inset-0 -z-1 animate-ping rounded-full bg-red-light opacity-75" />
@@ -79,10 +79,10 @@ export function Notification() {
       >
         <div className="mb-1 flex items-center justify-between px-2 py-1.5">
           <span className="text-lg font-medium text-dark dark:text-white">
-            Notifications
+          مشاهده اعلان ها
           </span>
           <span className="rounded-md bg-primary px-[9px] py-0.5 text-xs font-medium text-white">
-            5 new
+            5 تا جدید
           </span>
         </div>
 
@@ -121,7 +121,7 @@ export function Notification() {
           onClick={() => setIsOpen(false)}
           className="block rounded-lg border border-primary p-2 text-center text-sm font-medium tracking-wide text-primary outline-none transition-colors hover:bg-blue-light-5 focus:bg-blue-light-5 focus:text-primary focus-visible:border-primary dark:border-dark-3 dark:text-dark-6 dark:hover:border-dark-5 dark:hover:bg-dark-3 dark:hover:text-dark-7 dark:focus-visible:border-dark-5 dark:focus-visible:bg-dark-3 dark:focus-visible:text-dark-7"
         >
-          See all notifications
+          نمایش همه اعلان ها
         </Link>
       </DropdownContent>
     </Dropdown>

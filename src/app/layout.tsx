@@ -1,6 +1,8 @@
-import "@/css/satoshi.css";
+// import "@/css/satoshi.css";
 import "@/css/style.css";
 
+import { Figtree } from "next/font/google";
+import localFont from 'next/font/local'
 import { Sidebar } from "@/components/Layouts/sidebar";
 
 import "flatpickr/dist/flatpickr.min.css";
@@ -12,18 +14,61 @@ import NextTopLoader from "nextjs-toploader";
 import type { PropsWithChildren } from "react";
 import { Providers } from "./providers";
 
+const figtree = Figtree({
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--font-figtree",
+  weight: ["300", "400", "500", "600", "700", "700", "800", "900"],
+});
+
+const yekanbakh = localFont({
+  src: [
+      {
+          path: "../fonts/yekanbakh/YekanBakhFaNum-Thin.woff2",
+          weight: "100",
+          style: "normal",
+      },
+      {
+          path: "../fonts/yekanbakh/YekanBakhFaNum-Light.woff2",
+          weight: "300",
+          style: "normal",
+      },
+      {
+          path: "../fonts/yekanbakh/YekanBakhFaNum-Regular.woff2",
+          weight: "400",
+          style: "normal",
+      },
+      {
+          path: "../fonts/yekanbakh/YekanBakhFaNum-SemiBold.woff2",
+          weight: "600",
+          style: "normal",
+      },
+      {
+          path: "../fonts/yekanbakh/YekanBakhFaNum-Bold.woff2",
+          weight: "700",
+          style: "normal",
+      },
+      {
+          path: "../fonts/yekanbakh/YekanBakhFaNum-Black.woff2",
+          weight: "900",
+          style: "normal",
+      },
+  ],
+  variable: "--font-yekanbakh",
+});
+
 export const metadata: Metadata = {
   title: {
-    template: "%s | NextAdmin - Next.js Dashboard Kit",
-    default: "NextAdmin - Next.js Dashboard Kit",
+    template: "%s |پنل کاربری کوشا گروپ",
+    default: "پنل کاربری کوشا گروپ",
   },
   description:
-    "Next.js admin dashboard toolkit with 200+ templates, UI components, and integrations for fast dashboard development.",
+    "کوشا گروپ ، سیستم هوش مصنوعی حقوقی با قابلیت مشاوره و معرفی وکیل",
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html dir="rtl" lang="fa"  className={`${yekanbakh.variable} ${figtree.variable} `}  suppressHydrationWarning>
       <body>
         <Providers>
           <NextTopLoader showSpinner={false} />

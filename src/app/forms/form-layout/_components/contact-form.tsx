@@ -5,54 +5,54 @@ import { ShowcaseSection } from "@/components/Layouts/showcase-section";
 
 export function ContactForm() {
   return (
-    <ShowcaseSection title="Contact Form" className="!p-6.5">
+    <ShowcaseSection title="فرم تماس" className="!p-6.5">
       <form action="#">
         <div className="mb-4.5 flex flex-col gap-4.5 xl:flex-row">
           <InputGroup
-            label="First name"
+            label="نام"
             type="text"
-            placeholder="Enter your first name"
+            placeholder="نام خود را وارد کنید"
             className="w-full xl:w-1/2"
           />
 
           <InputGroup
-            label="Last name"
+            label="نام خانوادگی"
             type="text"
-            placeholder="Enter your last name"
+            placeholder="نام خانوادگی خود را وارد کنید"
             className="w-full xl:w-1/2"
           />
         </div>
 
         <InputGroup
-          label="Email"
+          label="ایمیل"
           type="email"
-          placeholder="Enter your email address"
+          placeholder="ایمیل خود را وارد کنید"
           className="mb-4.5"
           required
         />
 
         <InputGroup
-          label="Subject"
+          label="موضوع"
           type="text"
-          placeholder="Enter your subject"
+          placeholder="موضوع خود را وارد کنید"
           className="mb-4.5"
         />
 
         <Select
-          label="Subject"
-          placeholder="Select your subject"
+          label="موضوع"
+          placeholder="موضوع خود را انتخاب کنید"
           className="mb-4.5"
           items={[
-            { label: "United States", value: "USA" },
-            { label: "United Kingdom", value: "UK" },
-            { label: "Canada", value: "Canada" },
+            { label: "آمریکا", value: "USA" },
+            { label: "انگلستان", value: "UK" },
+            { label: "کانادا", value: "Canada" },
           ]}
         />
 
-        <TextAreaGroup label="Message" placeholder="Type your message" />
+        <TextAreaGroup label="پیام" placeholder="پیام خود وارد کنید." />
 
         <button className="mt-6 flex w-full justify-center rounded-lg bg-primary p-[13px] font-medium text-white hover:bg-opacity-90">
-          Send Message
+          ارسال پیام
         </button>
       </form>
     </ShowcaseSection>

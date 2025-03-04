@@ -114,7 +114,7 @@ export function Sidebar() {
 
                               <ChevronUp
                                 className={cn(
-                                  "ml-auto rotate-180 transition-transform duration-200",
+                                  "mr-auto rotate-180 transition-transform duration-200",
                                   expandedItems.includes(item.title) &&
                                     "rotate-0",
                                 )}

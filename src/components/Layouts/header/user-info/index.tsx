@@ -16,15 +16,15 @@ export function UserInfo() {
   const [isOpen, setIsOpen] = useState(false);
 
   const USER = {
-    name: "John Smith",
-    email: "johnson@nextadmin.com",
+    name: "سینا کوشا",
+    email: "info@koosha.group",
     img: "/images/user/user-03.png",
   };
 
   return (
     <Dropdown isOpen={isOpen} setIsOpen={setIsOpen}>
       <DropdownTrigger className="rounded align-middle outline-none ring-primary ring-offset-2 focus-visible:ring-1 dark:ring-offset-gray-dark">
-        <span className="sr-only">My Account</span>
+        <span className="sr-only">حساب کاربری من</span>
 
         <figure className="flex items-center gap-3">
           <Image
@@ -54,7 +54,7 @@ export function UserInfo() {
         className="border border-stroke bg-white shadow-md dark:border-dark-3 dark:bg-gray-dark min-[230px]:min-w-[17.5rem]"
         align="end"
       >
-        <h2 className="sr-only">User information</h2>
+        <h2 className="sr-only">اطلاعات کاربری</h2>
 
         <figure className="flex items-center gap-2.5 px-5 py-3.5">
           <Image
@@ -81,22 +81,22 @@ export function UserInfo() {
           <Link
             href={"/profile"}
             onClick={() => setIsOpen(false)}
-            className="flex w-full items-center gap-2.5 rounded-lg px-2.5 py-[9px] hover:bg-gray-2 hover:text-dark dark:hover:bg-dark-3 dark:hover:text-white"
+            className="flex flex-row-reverse w-full items-center gap-2.5 rounded-lg px-2.5 py-[9px] hover:bg-gray-2 hover:text-dark dark:hover:bg-dark-3 dark:hover:text-white"
           >
             <UserIcon />
 
-            <span className="mr-auto text-base font-medium">View profile</span>
+            <span className="ml-auto text-base font-medium">نمایش حساب کاربری</span>
           </Link>
 
           <Link
             href={"/pages/settings"}
             onClick={() => setIsOpen(false)}
-            className="flex w-full items-center gap-2.5 rounded-lg px-2.5 py-[9px] hover:bg-gray-2 hover:text-dark dark:hover:bg-dark-3 dark:hover:text-white"
+            className="flex flex-row-reverse w-full items-center gap-2.5 rounded-lg px-2.5 py-[9px] hover:bg-gray-2 hover:text-dark dark:hover:bg-dark-3 dark:hover:text-white"
           >
             <SettingsIcon />
 
-            <span className="mr-auto text-base font-medium">
-              Account Settings
+            <span className="ml-auto text-base font-medium">
+              تنظیات حساب کاربری
             </span>
           </Link>
         </div>
@@ -110,7 +110,7 @@ export function UserInfo() {
           >
             <LogOutIcon />
 
-            <span className="text-base font-medium">Log out</span>
+            <span className="text-base font-medium">خروج</span>
           </button>
         </div>
       </DropdownContent>

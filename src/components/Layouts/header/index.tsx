@@ -1,6 +1,5 @@
 "use client";
-
-import { SearchIcon } from "@/assets/icons";
+// import { SearchIcon } from "@/assets/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useSidebarContext } from "../sidebar/sidebar-context";
@@ -19,13 +18,13 @@ export function Header() {
         className="rounded-lg border px-1.5 py-1 dark:border-stroke-dark dark:bg-[#020D1A] hover:dark:bg-[#FFFFFF1A] lg:hidden"
       >
         <MenuIcon />
-        <span className="sr-only">Toggle Sidebar</span>
+        <span className="sr-only">منوی کناری</span>
       </button>
 
       {isMobile && (
         <Link href={"/"} className="ml-2 max-[430px]:hidden min-[375px]:ml-4">
           <Image
-            src={"/images/logo/logo-icon.svg"}
+            src={"/images/logo/logo-icon1.svg"}
             width={32}
             height={32}
             alt=""
@@ -36,21 +35,21 @@ export function Header() {
 
       <div className="max-xl:hidden">
         <h1 className="mb-0.5 text-heading-5 font-bold text-dark dark:text-white">
-          Dashboard
+          پنل کاربری
         </h1>
-        <p className="font-medium">Next.js Admin Dashboard Solution</p>
+        <p className="font-medium">پنل کاربری برای کاربران کوشا گروپ</p>
       </div>
 
-      <div className="flex flex-1 items-center justify-end gap-2 min-[375px]:gap-4">
-        <div className="relative w-full max-w-[300px]">
+       <div className="flex flex-1 items-center justify-end gap-2 min-[375px]:gap-4">
+    {/*    <div className="relative w-full max-w-[300px]">
           <input
             type="search"
-            placeholder="Search"
+            placeholder="جستجو..."
             className="flex w-full items-center gap-3.5 rounded-full border bg-gray-2 py-3 pl-[53px] pr-5 outline-none transition-colors focus-visible:border-primary dark:border-dark-3 dark:bg-dark-2 dark:hover:border-dark-4 dark:hover:bg-dark-3 dark:hover:text-dark-6 dark:focus-visible:border-primary"
           />
 
           <SearchIcon className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2 max-[1015px]:size-5" />
-        </div>
+        </div> */}
 
         <ThemeToggleSwitch />
 

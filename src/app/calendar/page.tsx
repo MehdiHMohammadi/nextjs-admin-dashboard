@@ -3,14 +3,14 @@ import CalendarBox from "@/components/CalenderBox";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Calender Page",
+  title: "تقویم",
   // other metadata
 };
 
 const CalendarPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Calendar" />
+      <Breadcrumb pageName="تقویم" />
 
       <CalendarBox />
     </>

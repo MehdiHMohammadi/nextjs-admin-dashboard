@@ -100,7 +100,7 @@ export function DropdownContent({
       className={cn(
         "fade-in-0 zoom-in-95 pointer-events-auto absolute z-99 mt-2 min-w-[8rem] origin-top-right rounded-lg",
         {
-          "animate-in right-0": align === "end",
+          "animate-in left-0": align === "end",
           "left-0": align === "start",
           "left-1/2 -translate-x-1/2": align === "center",
         },

@@ -18,7 +18,7 @@ const DatePickerTwo = () => {
   return (
     <div>
       <label className="mb-3 block text-body-sm font-medium text-dark dark:text-white">
-        Select date
+      انتخاب تااریخ
       </label>
       <div className="relative">
         <input
@@ -27,7 +27,7 @@ const DatePickerTwo = () => {
           data-class="flatpickr-right"
         />
 
-        <div className="pointer-events-none absolute inset-0 left-auto right-5 flex items-center text-dark-4 dark:text-dark-6">
+        <div className="pointer-events-none absolute inset-0 right-auto left-5 flex items-center text-dark-4 dark:text-dark-6">
           <ChevronUpIcon className="rotate-180" />
         </div>
       </div>

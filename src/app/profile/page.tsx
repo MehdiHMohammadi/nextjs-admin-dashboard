@@ -9,7 +9,7 @@ import { SocialAccounts } from "./_components/social-accounts";
 
 export default function Page() {
   const [data, setData] = useState({
-    name: "Danish Heilium",
+    name: "سینا کوشا",
     profilePhoto: "/images/user/user-03.png",
     coverPhoto: "/images/cover/cover-01.png",
   });
@@ -39,7 +39,7 @@ export default function Page() {
 
   return (
     <div className="mx-auto w-full max-w-[970px]">
-      <Breadcrumb pageName="Profile" />
+      <Breadcrumb pageName="پروفایل" />
 
       <div className="overflow-hidden rounded-[10px] bg-white shadow-1 dark:bg-gray-dark dark:shadow-card">
         <div className="relative z-20 h-35 md:h-65">
@@ -89,7 +89,7 @@ export default function Page() {
 
                   <label
                     htmlFor="profilePhoto"
-                    className="absolute bottom-0 right-0 flex size-8.5 cursor-pointer items-center justify-center rounded-full bg-primary text-white hover:bg-opacity-90 sm:bottom-2 sm:right-2"
+                    className="absolute bottom-0 left-0 flex size-8.5 cursor-pointer items-center justify-center rounded-full bg-primary text-white hover:bg-opacity-90 sm:bottom-2 sm:right-2"
                   >
                     <CameraIcon />
 
@@ -110,38 +110,34 @@ export default function Page() {
             <h3 className="mb-1 text-heading-6 font-bold text-dark dark:text-white">
               {data?.name}
             </h3>
-            <p className="font-medium">Ui/Ux Designer</p>
+            <p className="font-medium">وکیل پایه یک</p>
             <div className="mx-auto mb-5.5 mt-5 grid max-w-[370px] grid-cols-3 rounded-[5px] border border-stroke py-[9px] shadow-1 dark:border-dark-3 dark:bg-dark-2 dark:shadow-card">
               <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-dark-3 xsm:flex-row">
                 <span className="font-medium text-dark dark:text-white">
                   259
                 </span>
-                <span className="text-body-sm">Posts</span>
+                <span className="text-body-sm">پست ها</span>
               </div>
               <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-dark-3 xsm:flex-row">
                 <span className="font-medium text-dark dark:text-white">
                   129K
                 </span>
-                <span className="text-body-sm">Followers</span>
+                <span className="text-body-sm">دنبال کنندگان</span>
               </div>
               <div className="flex flex-col items-center justify-center gap-1 px-4 xsm:flex-row">
                 <span className="font-medium text-dark dark:text-white">
                   2K
                 </span>
-                <span className="text-body-sm-sm">Following</span>
+                <span className="text-body-sm-sm">دنبال کردن</span>
               </div>
             </div>
 
             <div className="mx-auto max-w-[720px]">
               <h4 className="font-medium text-dark dark:text-white">
-                About Me
+                درباره من
               </h4>
               <p className="mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque posuere fermentum urna, eu condimentum mauris
-                tempus ut. Donec fermentum blandit aliquet. Etiam dictum dapibus
-                ultricies. Sed vel aliquet libero. Nunc a augue fermentum,
-                pharetra ligula sed, aliquam lacus.
+              در گروه کوشا، مأموریت ما ارائه خدمات حقوقی با دسترسی آنلاین به ساده‌ترین و مقرون به صرفه‌ترین شکل ممکن است تا اطمینان حاصل کنیم که شما می‌توانید با خیالی آسوده و بدون دغدغه، مسیر پیچیده‌ی حل مسائل حقوقی خود را طی کنید. با استفاده از راهکارهای نوآورانه و همراهی از متخصصین مجرب حقوقی، ما هر قدم شما را تا رسیدن به بهترین نتیجه ممکن همراهی می‌کنیم.
               </p>
             </div>
 

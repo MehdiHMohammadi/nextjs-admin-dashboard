@@ -97,14 +97,14 @@ const MultiSelect: React.FC<DropdownProps> = ({ id }) => {
   return (
     <div className="relative z-50">
       <label className="mb-3 block text-body-sm font-medium text-dark dark:text-white">
-        Multiselect Dropdown
+        انتخاب چندگانه
       </label>
       <div>
         <select className="hidden" id={id}>
-          <option value="1">Design</option>
-          <option value="2">Development</option>
-          <option value="3">Option 4</option>
-          <option value="4">Option 5</option>
+          <option value="1">طراحی</option>
+          <option value="2">برنامه نویس</option>
+          <option value="3">فیگما کار</option>
+          <option value="4">محتوا نویس</option>
         </select>
 
         <div className="flex flex-col items-center">

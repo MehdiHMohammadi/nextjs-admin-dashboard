@@ -28,11 +28,11 @@ export async function getChatsData() {
 
   return [
     {
-      name: "Jacob Jones",
+      name: "حسین ناصری",
       profile: "/images/user/user-01.png",
       isActive: true,
       lastMessage: {
-        content: "See you tomorrow at the meeting!",
+        content: "فردا جلسه با خانم رضایی",
         type: "text",
         timestamp: "2024-12-19T14:30:00Z",
         isRead: false,
@@ -40,11 +40,11 @@ export async function getChatsData() {
       unreadCount: 3,
     },
     {
-      name: "Wilium Smith",
+      name: "سینا کوشا",
       profile: "/images/user/user-03.png",
       isActive: true,
       lastMessage: {
-        content: "Thanks for the update",
+        content: "قرارداد با آقای کلانتری",
         type: "text",
         timestamp: "2024-12-19T10:15:00Z",
         isRead: true,
@@ -52,11 +52,11 @@ export async function getChatsData() {
       unreadCount: 0,
     },
     {
-      name: "Johurul Haque",
+      name: "زویا رضایی",
       profile: "/images/user/user-04.png",
       isActive: false,
       lastMessage: {
-        content: "What's up?",
+        content: "فرستادن مدارک",
         type: "text",
         timestamp: "2024-12-19T10:15:00Z",
         isRead: true,
@@ -64,11 +64,11 @@ export async function getChatsData() {
       unreadCount: 0,
     },
     {
-      name: "M. Chowdhury",
+      name: "آقای دکتر امین",
       profile: "/images/user/user-05.png",
       isActive: false,
       lastMessage: {
-        content: "Where are you now?",
+        content: "ساعت جلسه هفته آینده?",
         type: "text",
         timestamp: "2024-12-19T10:15:00Z",
         isRead: true,
@@ -76,11 +76,11 @@ export async function getChatsData() {
       unreadCount: 2,
     },
     {
-      name: "Akagami",
+      name: "میلاد تاکی",
       profile: "/images/user/user-07.png",
       isActive: false,
       lastMessage: {
-        content: "Hey, how are you?",
+        content: "ترجمه مدارک آقای کوشا",
         type: "text",
         timestamp: "2024-12-19T10:15:00Z",
         isRead: true,

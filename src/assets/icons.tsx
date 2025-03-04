@@ -239,6 +239,7 @@ export function MessageOutlineIcon(props: IconProps) {
   );
 }
 
+
 export function EmailIcon(props: IconProps) {
   return (
     <svg

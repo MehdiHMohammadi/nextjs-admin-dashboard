@@ -18,14 +18,14 @@ export function UploadPhotoForm() {
 
           <div>
             <span className="mb-1.5 font-medium text-dark dark:text-white">
-              Edit your photo
+              ویرایش عکس
             </span>
             <span className="flex gap-3">
               <button type="button" className="text-body-sm hover:text-red">
-                Delete
+                حذف
               </button>
               <button className="text-body-sm hover:text-primary">
-                Update
+                بروزرسانی
               </button>
             </span>
           </div>
@@ -49,8 +49,7 @@ export function UploadPhotoForm() {
             </div>
 
             <p className="mt-2.5 text-body-sm font-medium">
-              <span className="text-primary">Click to upload</span> or drag and
-              drop
+              <span className="text-primary">برای آپلود کلیک کن </span> یا فایل مورد نظر را اینجا بنداز.
             </p>
 
             <p className="mt-1 text-body-xs">
@@ -64,13 +63,13 @@ export function UploadPhotoForm() {
             className="flex justify-center rounded-lg border border-stroke px-6 py-[7px] font-medium text-dark hover:shadow-1 dark:border-dark-3 dark:text-white"
             type="button"
           >
-            Cancel
+            انصراف
           </button>
           <button
             className="flex items-center justify-center rounded-lg bg-primary px-6 py-[7px] font-medium text-gray-2 hover:bg-opacity-90"
             type="submit"
           >
-            Save
+            ذخیره
           </button>
         </div>
       </form>

@@ -5,3 +5,4 @@ export { default as google } from './google.svg';
 export { default as main } from './main.svg'; 
 export { default as vimeo } from './vimeo.svg'; 
 export { default as x } from './x.svg'; 
+export { default as Conclusion } from './Conclusion.svg'; 
