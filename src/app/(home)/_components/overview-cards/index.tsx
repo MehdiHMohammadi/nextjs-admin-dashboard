@@ -12,7 +12,7 @@ export async function OverviewCardsGroup() {
         label="تاریخ وکلا"
         data={{
           ...views,
-          value: compactFormat(views.value),
+          value: Math.floor( (views.value)/1000),
         }}
         Icon={icons.Views}
       />
@@ -21,7 +21,7 @@ export async function OverviewCardsGroup() {
         label="پرونده جریانی"
         data={{
           ...profit,
-          value: "$" + compactFormat(profit.value),
+          value: Math.floor( (profit.value)/1000)+" پرونده ",
         }}
         Icon={icons.Profit}
       />
@@ -30,7 +30,7 @@ export async function OverviewCardsGroup() {
         label="تاریخچه وکلای منتخب"
         data={{
           ...products,
-          value: compactFormat(products.value),
+          value: Math.floor( (products.value)/1000),
         }}
         Icon={icons.Product}
       />
@@ -39,7 +39,7 @@ export async function OverviewCardsGroup() {
         label="تعداد وکلا"
         data={{
           ...users,
-          value: compactFormat(users.value),
+          value: Math.floor( (users.value)/100),
         }}
         Icon={icons.Users}
       />

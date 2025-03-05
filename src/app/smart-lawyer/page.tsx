@@ -17,7 +17,8 @@ const SmartLawyer = () => {
       <div>
                   <iframe
             src="https://smart-legal-assistant.vercel.app" // آدرس سایت مورد نظر
-            style={{ width: '100%', height: '500px', border: 'none' }}
+            // style={{ width: '100%', height: '500px', border: 'none' }}
+            className="w-full h-dvh  border-none"
             title="وکیل هوشمند"
           />
         </div>
