@@ -3,13 +3,13 @@
 import jsVectorMap from "jsvectormap";
 import { useEffect } from "react";
 
-import "@/js/us-aea-en";
+import "@/js/world";
 
 export default function Map() {
   useEffect(() => {
     new jsVectorMap({
       selector: "#mapOne",
-      map: "us_aea_en",
+      map: "world",
       zoomButtons: true,
       regionStyle: {
         initial: {
