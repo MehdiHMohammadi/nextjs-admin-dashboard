@@ -1,12 +1,9 @@
 "use client";
 import { CallIcon } from "@/assets/icons";
-import Link from "next/link";
 import React, { useState } from "react";
 import InputGroup from "../FormElements/InputGroup";
-import { Checkbox } from "../FormElements/checkbox";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Alert } from "@/components/ui-elements/alert";
 import { toast } from 'react-toastify';
 
 export default function SigninWithPassword() {
