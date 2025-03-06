@@ -31,7 +31,7 @@ export const NAV_DATA = [
         items: [],
       },
       {
-        title: "مداک ارسالی",
+        title: "مدارک ارسالی",
         url: "/sent-documents",
         icon: Icons.Send,
         items: [],

@@ -14,6 +14,8 @@ import NextTopLoader from "nextjs-toploader";
 import type { PropsWithChildren } from "react";
 import { Providers } from "./providers";
 
+import ToastProvider  from '@/components/ToastProvider';
+
 const figtree = Figtree({
   display: "swap",
   subsets: ["latin"],
@@ -85,6 +87,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
             </div>
           </div>
         </Providers>
+        <ToastProvider />
       </body>
     </html>
   );
