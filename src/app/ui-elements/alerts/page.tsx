@@ -30,11 +30,11 @@ export default function Page() {
           title="There were 1 errors with your submission"
           description="Lorem Ipsum is simply dummy text of the printing"
         />
-            <Alert
-      variant="error"
-      title="OTP تأیید شد"
-      description="description.........................."
-    />
+        <Alert
+          variant="error"
+          title="OTP تأیید شد"
+          description="description.........................."
+        />
       </div>
     </>
   );
