@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function SignIn() {
   return (
     <>
-      <Breadcrumb pageName="ورود" />
+      {/* <Breadcrumb pageName="ورود" /> */}
 
       <div className="rounded-[10px] bg-white shadow-1 dark:bg-gray-dark dark:shadow-card">
         <div className="flex flex-row-reverse flex-wrap items-center">
@@ -49,8 +49,7 @@ export default function SignIn() {
 
               <p className="w-full max-w-[375px] font-medium text-dark-4 dark:text-dark-6">
               لطفاً با تکمیل لازم وارد حساب خود شوید
-              گزینه های زیر
-              </p>
+                          </p>
 
               <div className="mt-31 w-auto h-auto">
                 <Image

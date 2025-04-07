@@ -1,4 +1,4 @@
-// import "@/css/satoshi.css";
+"use client";
 import "@/css/style.css";
 
 import { Figtree } from "next/font/google";
@@ -9,12 +9,17 @@ import "flatpickr/dist/flatpickr.min.css";
 import "jsvectormap/dist/jsvectormap.css";
 
 import { Header } from "@/components/Layouts/header";
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
 import type { PropsWithChildren } from "react";
 import { Providers } from "./providers";
 
 import ToastProvider  from '@/components/ToastProvider';
+// 
+import { usePathname  } from 'next/navigation';
+
+
+
 
 const figtree = Figtree({
   display: "swap",
@@ -59,16 +64,34 @@ const yekanbakh = localFont({
   variable: "--font-yekanbakh",
 });
 
-export const metadata: Metadata = {
-  title: {
-    template: "%s |پنل کاربری کوشا گروپ",
-    default: "پنل کاربری کوشا گروپ",
-  },
-  description:
-    "کوشا گروپ ، سیستم هوش مصنوعی حقوقی با قابلیت مشاوره و معرفی وکیل",
-};
+// export const metadata: Metadata = {
+//   title: {
+//     template: "%s |پنل کاربری کوشا گروپ",
+//     default: "پنل کاربری کوشا گروپ",
+//   },
+//   description:
+//     "کوشا گروپ ، سیستم هوش مصنوعی حقوقی با قابلیت مشاوره و معرفی وکیل",
+// };
 
 export default function RootLayout({ children }: PropsWithChildren) {
+  const pathname = usePathname();
+  // if (router.includes('/login') || router.includes('/register')) {
+  //   return children;
+  // }
+  if (pathname === "/sign-in") {
+    return ( <html
+      dir="rtl"
+      lang="fa"
+      className={`${yekanbakh.variable} ${figtree.variable} `}
+      suppressHydrationWarning
+    >
+      <body>
+        <main className="isolate mx-auto w-full max-w-screen-2xl overflow-hidden p-4 md:p-6 2xl:p-10">
+          {children}
+        </main>
+      </body>
+    </html>);
+  }
   return (
     <html dir="rtl" lang="fa"  className={`${yekanbakh.variable} ${figtree.variable} `}  suppressHydrationWarning>
       <body>
