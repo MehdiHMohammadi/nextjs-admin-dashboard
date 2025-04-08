@@ -5,14 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "ورود",
+  title: "ورود | پنل کاربری کوشا گروپ",
+  description: "به پنل کاربری کوشا گروپ وارد شوید",
 };
-
 export default function SignIn() {
   return (
     <>
-      {/* <Breadcrumb pageName="ورود" /> */}
-
       <div className="rounded-[10px] bg-white shadow-1 dark:bg-gray-dark dark:shadow-card">
         <div className="flex flex-row-reverse flex-wrap items-center">
           <div className="w-full xl:w-1/2">
@@ -40,7 +38,7 @@ export default function SignIn() {
                 />
               </Link>
               <p className="mb-3 text-xl font-medium text-dark dark:text-white">
-                ورود به اپلیکیشن
+                ورود به اپلیکیشن کوشا
               </p>
 
               <h1 className="mb-4 text-2xl font-bold text-dark dark:text-white sm:text-heading-3">
@@ -48,10 +46,10 @@ export default function SignIn() {
               </h1>
 
               <p className="w-full max-w-[375px] font-medium text-dark-4 dark:text-dark-6">
-              لطفاً با تکمیل لازم وارد حساب خود شوید
-                          </p>
+                لطفاً با تکمیل فرم وارد حساب خود شوید.
+              </p>
 
-              <div className="mt-31 w-auto h-auto">
+              <div className="mt-31 h-auto w-auto">
                 <Image
                   src={"/images/grids/grid-02.svg"}
                   alt="Logo"

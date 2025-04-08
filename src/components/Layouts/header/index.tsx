@@ -35,9 +35,9 @@ export function Header() {
 
       <div className="max-xl:hidden">
         <h1 className="mb-0.5 text-heading-5 font-bold text-dark dark:text-white">
-          پنل کاربری
+          پنل کاربری مدیریت
         </h1>
-        <p className="font-medium">پنل کاربری برای کاربران کوشا گروپ</p>
+        <p className="font-medium">پنل کاربری برای مدیریت کوشا گروپ</p>
       </div>
 
        <div className="flex flex-1 items-center justify-end gap-2 min-[375px]:gap-4">

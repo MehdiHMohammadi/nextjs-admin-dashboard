@@ -18,7 +18,7 @@ export async function OverviewCardsGroup() {
       />
 
       <OverviewCard
-        label="پرونده جریانی"
+        label="شرکت‌های حقوقی"
         data={{
           ...profit,
           value: Math.floor( (profit.value)/1000)+" پرونده ",

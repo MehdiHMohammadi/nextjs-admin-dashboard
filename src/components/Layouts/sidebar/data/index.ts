@@ -25,7 +25,7 @@ export const NAV_DATA = [
         items: [],
       },
       {
-        title: "پرونده جریانی",
+        title: "شرکت‌های حقوقی",
         url: "/file-flow",
         icon: Icons.FolderOpen,
         items: [],

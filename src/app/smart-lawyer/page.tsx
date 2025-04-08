@@ -2,9 +2,9 @@ import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 
 import { Metadata } from "next";
 
-
 export const metadata: Metadata = {
-  title: " وکیل هوشمند",
+  title: " وکیل هوشمند |  پنل کاربری کوشا گروپ",
+  description:"وکیل هوشمند جهت راهنمایی مسائل حقوقی در دبی امارات"
 };
 
 const SmartLawyer = () => {
@@ -13,12 +13,10 @@ const SmartLawyer = () => {
       <Breadcrumb pageName="وکیل هوشمند" />
 
       <div className="space-y-10">
-       
-      <div>
-                  <iframe
-            src="https://smart-legal-assistant.vercel.app" // آدرس سایت مورد نظر
-            // style={{ width: '100%', height: '500px', border: 'none' }}
-            className="w-full h-dvh  border-none"
+        <div>
+          <iframe
+            src="https://smart-legal-assistant.vercel.app"
+            className="h-dvh w-full border-none"
             title="وکیل هوشمند"
           />
         </div>
