@@ -12,6 +12,7 @@ export function Logo() {
         alt="NextAdmin logo"
         role="presentation"
         quality={100}
+        sizes="100%"
       />
 
       <Image
@@ -21,6 +22,7 @@ export function Logo() {
         alt="NextAdmin logo"
         role="presentation"
         quality={100}
+         sizes="100%"
       />
     </div>
   );
