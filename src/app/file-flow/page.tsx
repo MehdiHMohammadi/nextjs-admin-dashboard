@@ -527,12 +527,7 @@ const handleAddFirm = async (e: React.FormEvent) => {
           </div>
         )}
       </div>
-
-      <footer className="bg-white border-t mt-12 py-6">
-        <div className="container mx-auto px-4 text-center text-gray-500">
-          <p>© {new Date().getFullYear()} - شرکت‌های حقوقی دبی</p>
-        </div>
-      </footer>
+     
     </div>
   );
 }

@@ -26,12 +26,12 @@ export default function Page() {
         />
 
         <Alert
-          variant="error"
+          variant="warning"
           title="There were 1 errors with your submission"
           description="Lorem Ipsum is simply dummy text of the printing"
         />
         <Alert
-          variant="error"
+          variant="destructive"
           title="OTP تأیید شد"
           description="description.........................."
         />
